@@ -10,7 +10,6 @@
 	<header>
 		<h1 id="title">Cafeteria<br>Gourmet</h1>
 	</header>
-	<!-- <main id="home"> -->
 		<fieldset id="home">
 			<form action="testLogin.php" method="POST">
 				<input type="email" name="nMail" id="iMail" placeholder="Email"><br>
@@ -20,7 +19,5 @@
 				<input class="btn-home" type="submit" name="submit" value="Login">
 			</form>
 		</fieldset>
-		<!-- <a href="login.php">Login</a> -->
-	<!-- </main> -->
 </body>
 </html>

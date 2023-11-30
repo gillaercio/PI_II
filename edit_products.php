@@ -1,13 +1,4 @@
 <?php
-    // session_start();
-    
-    // if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-    // {
-    //     unset($_SESSION['email']);
-    //     unset($_SESSION['senha']);
-    //     header('Location: home.php');
-    // }
-    // $logado = $_SESSION['email'];
     
     if(!empty($_GET['id']))
     {
@@ -126,6 +117,6 @@
         </form>
     </main>
     <hr noshade="">
-    <footer>Desenvolvido por <a href=""> &copy;Gildman Laécio</a></footer>
+    <footer>Desenvolvido por <a href="https://github.com/gillaercio/" target="_blank"> &copy;Gildman Laécio</a></footer>
 </body>
 </html>

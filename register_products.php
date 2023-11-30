@@ -112,6 +112,6 @@
         </form>
     </main>
     <hr noshade="">
-    <footer>Desenvolvido por <a href=""> &copy;Gildman Laécio</a></footer>
+    <footer>Desenvolvido por <a href="https://github.com/gillaercio/" target="_blank"> &copy;Gildman Laécio</a></footer>
 </body>
 </html>
