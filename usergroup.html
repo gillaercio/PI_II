@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Cafeteria Gourmet</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="dash.html"><img src="images/casinha.png" width="20" height="20" alt="Tela Inicial"> Início</a></li>
+                <li><a href="consult_products.php"><img src="images/produtos icon.png" width="20" height="20" alt="Consulta de Produtos"> Produtos</a></li>
+                <li><a href="consult_employee.php"><img src="images/pessoas icon.png" width="20" height="20" alt="Consulta de Colaboradores"> Colaborador</a></li>
+                <li><a href="settings.html"><img src="images/configurações icon.png" width="20" height="20" alt="Configurações"> Configurações</a></li>
+                <li><a href="financial.html"><img src="images/financeiro icon.png" width="20" height="20" alt="Financeiro"> Financeiro</a></li>
+            </ul>
+            <p>Olá, Admin <></p>
+        </nav>
+    </header>
+    <hr noshade="">
+    <main class="insertProd">
+        <h1>Grupos de Usuários</h1>
+        <form class="form" action="" method="post">
+            <fieldset>
+                <table id="cargo">
+                    <caption>Cargos</caption>
+                    <th>Código</th>
+                    <th>Descrição</th>
+                    <tr>
+                        <td>01</td>
+                        <td>ADMIN</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>CAIXA</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>REPOSITOR</td>
+                    </tr>
+                </table>
+                <table id="ativo">
+                    <caption>Permissões Inativas</caption>
+                    <th>Selecionar</th>
+                    <th>Descrição</th>
+                    <tr>
+                        <td><input type="checkbox" name="nCadP" id="iCadP"></td>
+                        <td>Cadastrar Produtos</td>
+                    </tr><tr>
+                        <td><input type="checkbox" name="nEditP" id="iEditP"></td>
+                        <td>Editar Produtos</td>
+                    </tr><tr>
+                        <td><input type="checkbox" name="nExcP" id="iExcP"></td>
+                        <td>Excluir Produtos</td>
+                    </tr><tr>
+                        <td><input type="checkbox" name="nEntNF" id="iEntNF"></td>
+                        <td>Entrada de NF-e</td>
+                    </tr>
+                </table>
+                <table id="inativo">
+                    <caption>Permissões Inativas</caption>
+                    <th>Selecionar</th>
+                    <th>Descrição</th>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Emissão de NF-e Devolução Compra</td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </main>
+    <hr noshade="">
+    <footer>Desenvolvido por <a href=""> &copy;Gildman Laécio</a></footer>
+</body>
+</html>

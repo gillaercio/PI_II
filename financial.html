@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Cafeteria Gourmet</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="dash.html"><img src="images/casinha.png" width="20" height="20" alt="Tela Inicial"> Início</a></li>
+                <li><a href="consult_products.php"><img src="images/produtos icon.png" width="20" height="20" alt="Consulta de Produtos"> Produtos</a></li>
+                <li><a href="consult_employee.php"><img src="images/pessoas icon.png" width="20" height="20" alt="Consulta de Colaboradores"> Colaborador</a></li>
+                <li><a href="settings.html"><img src="images/configurações icon.png" width="20" height="20" alt="Configurações"> Configurações</a></li>
+                <li><a href="financial.html"><img src="images/financeiro icon.png" width="20" height="20" alt="Financeiro"> Financeiro</a></li>
+            </ul>
+            <p><a class="sair" href="logoff.php">Sair</a></p>
+        </nav>
+    </header>
+    <hr noshade="">
+    <main class="insertProd">
+        <h1>Gerenciador Financeiro</h1>
+        <nav>
+            <ul>
+                <li><a href="financial.html">Gerencial</a></li>
+                <li><a href="">Plano de Contas</a></li>
+                <li><a href="">Bancos</a></li>
+                <li><a href="">Outros</a></li>
+            </ul>
+        </nav>
+        <form class="form" action="" method="post">
+            <fieldset>
+                <p>Contas a pagar</p>
+                <label for="iDate">Data de Emissão</label>
+                <input type="date" name="nDate" id="iDate">
+                <label for="iPay">Forma de Pagamento</label>
+                <select  name="nPay" id="iPay">
+                    <option value="Dinheiro">0 - Dinheiro</option>
+                    <option value="Cartão">1 - Cartão</option>
+                    <option value="Cheque">2 - Cheque</option>
+                    <option value="TransBanco">3 - Transf. Bancária</option>
+                </select>
+                <label for="iValue">Valor</label>
+                <select  name="nValue" id="iValue">
+                    <option value="Caixa01">0 - Caixa 01</option>
+                </select>
+                <label for="iExpenses">Tipo Despesa</label>
+                <select  name="nExpenses" id="iExpenses">
+                    <option value="Mercadoria">0 - Compra de Mercadoria</option>
+                    <option value="Aluguel">1 - Aluguel</option>
+                    <option value="Energia">2 - Conta de Luz</option>
+                    <option value="Água">3 - Conta de Água</option>
+                </select>
+                <label for="iObs">Observação</label>
+                <input type="text" name="nObs" id="iObs" size="25" maxlength="30">
+            </fieldset>
+            
+            <p><input class="iSave" type="submit" value="GRAVAR" /></p>
+
+            <p><input class="iCancel" type="submit" value="CANCELAR" /></p>
+        </form>
+    </main>
+    <hr noshade="">
+    <footer>Desenvolvido por <a href="">&copy; Gildman Laécio</a></footer>
+</body>
+</html>

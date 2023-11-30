@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root {
+	--cor0: #331a00;
+	--cor1: #6e3b05;
+	--cor2: #ab5b05;
+	--cor3: #e47805;
+	--cor4: #004600;
+	--cor5: #ff0000;
+	--cor6: #0000ff;
+
+	--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+	--fonte-destaque: 'Great Vibes', cursive;
+}
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--fonte-padrao);
+	background-image: linear-gradient(to right, white, var(--cor1));
+}
+
+li {
+	list-style: none;	
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+hr {
+	color: var(--cor0);
+}
+
+input, select {
+	border: none;
+	outline: none;
+}
+
+/* CABEÇALHO*/
+
+header h1#title {
+	font-family: var(--fonte-destaque);
+	color: var(--cor0);
+	font-size: 5em;
+	text-align: center;
+	margin: 40px 0px 20px 0px;
+	text-shadow: 0px 3px 3px rgba(0,0,0,0.7);
+}
+
+nav.nav {
+	width: 100%;
+	flex-direction: row;
+	display: flex;
+	vertical-align: middle;
+	background-color: var(--cor0);
+}
+
+nav.nav ul {
+	display: flex;
+	font-weight: bolder;
+	text-align: center;
+}
+
+nav.nav ul li {
+	padding: 5px 15px;
+}
+
+nav.nav ul li a {
+	background-color: white;
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+
+nav.nav ul li a:hover {
+	background-color: var(--cor3);
+	color: var(--cor0);
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+nav.nav p {
+	position: absolute;
+	vertical-align: middle;
+	right: 20px;
+	top: 7px;
+}
+
+nav.nav p>a {
+	background-color: white;
+	color: var(--cor0);
+	border-radius: 5px;
+	font-size: 1.3em;
+	padding: 2px 5px;
+}
+
+nav.nav p>a:hover {
+	background-color: var(--cor3);
+	color: var(--cor0);
+	box-shadow: 1px 2px 2px rgba(0,0,0,0.4);
+}
+
+/* CORPO*/
+
+main {
+    min-width: 300px;
+	min-height: calc(100vh - 50px - 20px);
+	margin: auto;
+	padding: 20px;
+}
+
+table {
+	background-color: var(--cor0);
+	color: white;
+	font-size: 0.7em;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+thead {
+	font-weight: bolder;
+	background-color: var(--cor2);
+}
+
+td {
+	border-bottom: 1px solid var(--cor2);
+	padding: 1px;
+}
+
+td.ce {
+	width: 20px;
+	border-radius: 5px 0px 0px 0px;
+}
+
+td.cd {
+	border-radius: 0px 5px 0px 0px;
+}
+
+td.trib {
+	width: 85px;
+}
+
+tbody a {
+	text-align: center;
+}
+
+a.edit img, a.del img {
+	padding: 2px;
+	border-radius: 2px;
+}
+
+a.edit img, a.del img {
+	background-color: var(--cor3);
+}
+
+a.edit img:hover {
+	background-color: var(--cor6);
+}
+
+a.del img:hover {
+	background-color: var(--cor5);
+}
+
+fieldset#home {
+	background-color: var(--cor0);
+	color: white;
+	max-width: 15%;
+	margin: auto;
+	height: 150px;
+	padding: 25px;
+	border-radius: 15px;
+	border: none;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+fieldset#home input {
+	padding: 5px;
+	border-radius: 5px;
+	width: 100%;
+	margin: 5px auto;
+	border: none;
+}
+
+fieldset#home input.btn-home {
+	color: var(--cor0);
+	width: 100%;
+	font-weight: bold;
+}
+
+fieldset#home input.btn-home:hover {
+	cursor: pointer;
+	background-color: var(--cor2);
+	color: white;
+}
+
+fieldset legend {
+	color: white;
+	font-weight: bold;
+}
+
+main.insertProd form {
+	border-radius: 2px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+main.insertProd h1{
+	margin-bottom: 20px;
+}
+
+nav.nav ul li a , main.insertProd h1 {
+	color: var(--cor0);
+	font-weight: bolder;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+}
+
+main.insertProd nav ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0px;
+	align-items: center;
+}
+
+main.insertProd button {
+	padding: 4px;
+	border: none;
+	border-radius: 5px;
+	vertical-align: middle;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+#pesquisar {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+main.insertProd nav ul li {
+	margin-right: 20px;
+}
+
+main.insertProd nav li a {
+	color: var(--cor2);
+	font-weight: bolder;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+	padding: 10px 5px;
+	border-radius: 5px;
+}
+
+main.insertProd nav ul li a:hover {
+	color: white;
+	background-color: var(--cor0);
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
+}
+
+form.form{
+	color: white;
+	background-color: var(--cor0);
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.4);
+	padding: 20px;
+	font-size: .9em;
+}
+
+form.form input, form.form select#iType, form.form select#iJob, form.form select#iOrig, form.form select#iTrib {
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+form.form p {
+	flex-direction: row;
+	display: inline;
+}
+
+input#iUf {
+	width: 20px;
+}
+
+input#iUn {
+	width: 30px;
+}
+
+input#iMinS, input#iCurS, input#iNum, input#iCodigo, input#iCode {
+	width: 60px;
+}
+
+input#iEan, input#iNcm, input#iPhone {
+	width: 80px;
+}
+
+input#iPurP, input#iSaleP {
+	width: 100px;
+}
+
+input#iUser, input#iPass, input#iNabe {
+	width: 150px;
+}
+
+input#iMail, input#iCity {
+	width: 250px;
+}
+
+input#iDesc, input#iName, input#iAdress {
+	width: 350px;
+}
+
+fieldset {
+	margin-bottom: 5px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+	border-radius: 5px;
+}
+
+form p input.iSave, form>p>input.update {
+	font-weight: bold;
+	padding: 8px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+}
+
+.iSave:hover, .update:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.update, .iSave {
+	background-color: var(--cor4);
+	color: white;
+}
+
+/* RODAPÉ*/
+
+footer {
+	color: white;
+	background-color: var(--cor0);
+  	width: 100%;
+  	/* height: 20px; */
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0px 2px 2px rgba(0,0,0,0.7);
+}
+
+footer a {
+	color: var(--cor1);
+	font-weight: bolder;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: var(--cor3);
+	text-decoration: underline;
+}
